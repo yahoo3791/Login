@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ubuntu&display=swap');
+  body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-family: 'Lato', sans-serif;
+  text-align:center;
+  height: 100vh;
+  }
+  .login{
+  background: black;
+  padding: 60px 40px;
+  box-shadow: 10px 10px 10px #00000080;
+  width: 250px;
+}
+  .login h1{
+  color:white;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.username,.password{
+  display: block;
+  text-align:center;
+  margin: 1rem auto;
+  border:2px solid white;
+  transition: all 0.25s;
+  width: 150px;
+}
+.username,.password,.registerBtn,.loginBtn{
+  border-radius:30px;
+  padding: 5px 16px;
+  outline:none;
+  background: transparent;
+  color:#fff;
+}
+.registerBtn,
+.loginBtn{
+  cursor:pointer;
+  border:1px solid white;
+}
+.registerBtn:hover,
+.loginBtn:hover{
+  background: white;
+  color:black;
+}
+
+</style>
+<body>
+<from class="login" action="">
+  <h1>LOGIN</h1>
+  <input type="email" placeholder="email" class="username">
+  <input type="password" placeholder="Password" class="password">
+  <span class="alert" style="display: block; color: red; padding-bottom: 12px;"></span>
+  <input type="submit" value="註冊" class="registerBtn">
+  <input type="submit" value="登入" class="loginBtn">
+</from>
+
+</body>
+<script src="./app.js"></script>
+</html>
